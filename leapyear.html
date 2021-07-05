@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Check the leap year</h1>
+    <script>
+        function checkyear(a){
+            var a;
+            if ((a%4 == 0 && a%100 != 0) || (a%400 == 0))
+            return "This is leap year";
+            else 
+            return "This is not leap year";
+        }
+        year = prompt("Insert year");
+        year = parseInt(year);
+        alert (checkyear(year));
+
+    </script>
+    
+</body>
+</html>

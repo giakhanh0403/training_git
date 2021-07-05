@@ -1,0 +1,7 @@
+sự khác nhau giữa setTimeOut và setTimeInterval
++ khác:
+- hàm trong setTimeOut khi trải qua khoảng thời gian được set nó mới bắt đầu thực hiện, và không có tính lặp lại
+- hàm trong setTimeOut khi trải qua khoảng thời gian được set nó mới bắt đầu thực hiện và lặp lại liên tục cho tới khi clear 
++ giống :
+- đều là bộ định thời gian
+- trong khoảng thời gian đợi tới khi hàm được thực thi nếu clear thì setTimeOut và setTimeOut đều ngừng hoạt động.
