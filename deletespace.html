@@ -17,12 +17,12 @@
         var i;
         var j=str.length;
         for(i=0;i<j;i++){
-        if(str[i]!==' '){
-        for(i=0;str[i]!==' ';i++){
-        newstr+=str[i];
-        }
-        newstr+=' ';
-        }
+            if(str[i]!==' '){
+                for(;str[i]!==' ';i++){
+                newstr+=str[i];
+                }
+            newstr+=' ';
+            }
         }
         console.log("chuỗi sau khi sửa:", newstr);
     </script>
