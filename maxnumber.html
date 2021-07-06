@@ -11,8 +11,13 @@
     <p id="demo"></p>
 
     <script>
-        const arr = [3,5,7];
-        var max = Math.max.apply(Math, arr);
+        const arr = [3,5,7,85];
+        var max = arr[0];
+        for(let i=1; i<arr.length;i++)
+        {
+            if(max<arr[i])
+            max=arr[i]
+        }
         document.getElementById("demo").innerHTML= "The max number of "+ arr + " is:  " + max;
     </script>
 </body>
