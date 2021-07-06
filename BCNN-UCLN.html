@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Tìm UCLN và BCNN</h1>
+
+    <script>
+        var a = parseInt(prompt("Nhập số a"));
+        var b = parseInt(prompt("Nhập số b"));
+        function ucln(x,y)
+        {
+            var x,y;
+            while(x!= y)
+            {
+                if (x>y) x= x-y;
+                else y= y-x;
+            }
+            return x;
+        }
+        function bcnn(x,y)
+        {
+            var x,y;
+            return (x*y)/ucln(x,y);
+        }
+        document.write("Hai số vừa nhập là "+ a + " và "+b + "<br>");
+        document.write("UCLN là: "+ ucln(a,b) + "<br>");
+        document.write("BCNN là: "+ bcnn(a,b));
+    </script>
+    
+</body>
+</html>

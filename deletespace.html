@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Xóa khoảng trắng dư thừa</h1>
+    <p id="demo"></p>
+    
+    <script>
+        var str='     Chim   Sẻ   Đi              Nắng          ';
+        var newstr='';
+        console.log("chuỗi trước khi sửa:", str);
+        var i;
+        var j=str.length;
+        for(i=0;i<j;i++){
+        if(str[i]!==' '){
+        for(i=0;str[i]!==' ';i++){
+        newstr+=str[i];
+        }
+        newstr+=' ';
+        }
+        }
+        console.log("chuỗi sau khi sửa:", newstr);
+    </script>
+</body>
+</html>
