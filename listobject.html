@@ -9,5 +9,17 @@
 <body>
     <h1>Những đối tượng có tuổi lớn hơn 30</h1>
     <script>
-        const a = [{name: ‘John Nguyen’’, age: 30}, {name: ‘Strong Dang’, age: 20}, {name: ‘Lucia Pham’, age: 12}];
-        var person =
+        var a = [
+            {name: "John Nguyen", age: 30},
+            {name: "Strong Dang", age: 20},
+            {name: "Lucia Pham", age: 12}
+        ];      
+        var person = a.filter(item =>
+        {
+            return (item.age<30);
+        });
+        console.log(person)
+    </script>
+</body>
+</html>
+        

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Tạo mảng mới thỏa yêu cầu</h1>
+    <script>
+        var a = [
+            {name: "John Nguyen", age: 30},
+            {name: "Strong Dang", age: 20},
+            {name: "Lucia Pham", age: 12}
+        ];  
+        var newarr = a.map(item =>
+        { if (item.age>=30) return {...item,subsidized: "true"}; return{...item,subsidized: "false"};});
+        console.log("Mảng mới sau khi thêm thuộc tính",newarr);
+
+        var sum= newarr.reduce((total,currentValue) =>
+        {   
+            if(currentValue.subsidized == true)
+                return total + 100;
+        },0);
+        console.log("Tổng trợ cấp là:",sum);
+        
+
+    </script>
+</body>
+</html>

@@ -11,14 +11,12 @@
     <p id="demo"></p>
 
     <script>
-        const arr = [3,5,7];
-        var max = 0;
-        for(let i=0; i<arr.length;i++)
-        {
-            if(max<arr[i])
-            max=arr[i]
-        }
-        document.getElementById("demo").innerHTML= "The max number of "+ arr + " is:  " + max;
+        let a,b,c;
+        a= 3; b=5; c=7;
+        var max = a;
+        if ((b<c)&&(max<b)) max=c;
+        if ((b>c)&&(max<c)) max=b;
+        console.log("số lớn nhất là",max)
     </script>
 </body>
 </html>
