@@ -11,17 +11,8 @@
     <script>
         var a=[[1,2],[3,4],[5,6]];
         console.log(a)
-        var newarr=[];
-        var i;
-        for (i=0;i<a.length;i++)
-        {
-            a[i].forEach(myFunction);
-            function myFunction(value)
-            {
-                newarr.push(value);
-            }
-        }
-        console.log(newarr);
+        var newarr=a.reduce((t, c) => { return t.concat(c) }, []);
+        console.log(newarr)
     </script>
 </body>
 </html>
